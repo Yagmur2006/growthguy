@@ -93,4 +93,69 @@ h3{
     color: var(--color-body-dark);
 }
 
-/*  */
+/* icons */
+
+.icon--white{
+    fill: var(--color-accent);
+}
+
+.icon--dark{
+    fill: var(--color-body-dark);
+}
+
+.icon--primary{
+    fill: var(--color-primary);
+}
+
+.icon--small{
+    width: 20px;
+    height: 20px;
+}
+
+.icon--large{
+    width:30px;
+    height: 30px;
+}
+
+.icon--arrow{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg);
+}
+
+.icon-container--circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.icon-container--square{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.icon-container--primary{
+    background-color: var(--color-primary);
+}
+
+.icon-container--secondary{
+    background-color: var(--color-secondary);
+}
+
+.icon-container--accent{
+    background-color: var(--color-accent);
+}
+
+.icon-star{
+   width: 10px;
+   height: 10px;
+}
