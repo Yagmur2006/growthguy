@@ -44,6 +44,15 @@ h3{
     color: var(--color-primary);
 }
 
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+hr{
+   border-color: var(--color-body-dark);
+}
+
 @media screen and (min-width:1024px) {
     h1{
         font-size: 7rem;
@@ -93,15 +102,13 @@ h3{
     color: var(--color-body-dark);
 }
 
+
 /* icons */
 
 .icon--white{
     fill: var(--color-accent);
 }
 
-.icon--dark{
-    fill: var(--color-body-dark);
-}
 
 .icon--primary{
     fill: var(--color-primary);
@@ -117,9 +124,10 @@ h3{
     height: 30px;
 }
 
-.icon--arrow{
-    width: 70px;
-    height: 70px;
+.icon-arrow{
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
     transform: rotate(-45deg);
 }
 
@@ -158,4 +166,107 @@ h3{
 .icon-star{
    width: 10px;
    height: 10px;
+}
+
+/* cards */
+/* arrow cards */
+
+.card{
+    --padding-vertical:2rem;
+    padding: var(--padding-vertical) 2rem;
+    border-radius: 15px;
+    
+}
+
+.counter{
+    counter-reset: arrow-card-number;
+}
+
+.card-arrow{
+   padding-top: calc(var(--padding-vertical) + 10rem);
+   color: var(--color-body-dark);
+   transition:background-color 0.3s ;
+}
+
+.card-arrow:hover{
+    background-color: var(--color-accent);
+}
+
+.card-arrow__heading{
+    color: var(--color-body-dark);
+}
+
+.card-arrow__heading::before{
+    counter-increment: arrow-card-number;
+    content: counter(arrow-card-number, decimal-leading-zero) " ";
+    display: block;
+}
+
+.card-arrow--orange{
+    background-color: #F8A530;
+}
+
+.card-arrow--primary{
+    background-color: var(--color-primary);
+}
+
+.card-arrow--purple{
+    background-color: #9607ff;
+}
+
+/* card arrow version2 */
+
+.card-arrow2{
+    padding: 2rem;
+    color: var(--color-body-dark);
+    background-color: var(--color-accent);
+    transition:background-color 0.4s ;
+}
+
+.card-arrow2:hover{
+    background-color: var(--color-primary);
+}
+
+.card-arrow2__heading{
+    color: var(--color-body-dark);
+    line-height: 2.5;
+}
+
+.card-arrow2__heading::before{
+    content: "Growth Marketing | 11MINUTES READ";
+    display: block;
+    font-size: 1.2rem;
+}
+
+.card-arrow2__heading::after{
+    content: "July 29, 2024";
+    font-size: 1.2rem;
+    color: #707070;
+    display: block;
+}
+
+/* outline card */
+
+.card-outline{
+    border: 1px solid;
+    color: var(--color-accent);
+}
+
+.card-outline--accent{
+    border-color: #616060;
+}
+
+.card-outline--secondary{
+    border-color: var(--color-secondary);
+}
+
+.card-outline-content{
+    padding: 2rem;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.card-outline-content:hover{
+    background-color: var(--color-secondary);
+
 }
