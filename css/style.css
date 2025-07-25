@@ -122,13 +122,13 @@ hr{
 }
 
 .icon--small{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .icon--large{
-    width:30px;
-    height: 30px;
+    width:50px;
+    height: 50px;
 }
 
 .icon-arrow{
@@ -567,4 +567,64 @@ hr{
 .container{
     max-width: 1400px;
     margin: auto;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    align-items: center;
+    border: 0;
+}
+
+.footer__logo{
+    max-width: 150px;
+    margin: auto;
+}
+
+
+.footer__list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 100%;
+ }
+
+.footer__items{
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.footer__items > a {
+    color: #d2d0db;
+}
+
+.footer__items > a:hover {
+    color: #fff;
+}
+
+.footer ~ hr{
+    border-color: var(--color-primary);
+}
+
+.footer__list > svg {
+    padding-left: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+
+    .footer__list{
+        width: auto;
+        display: flex;
+    }
+    
+    .footer__logo{
+        max-width: 150px;
+        margin: 0;
+    }
+
 }
